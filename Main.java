@@ -10,6 +10,7 @@ public class Main {
       // note: System.in() is the computer's keyboard
       Scanner scan = new Scanner(System.in);
 
+      /*
       // Take input with the Scanner methods
       System.out.println("Enter some text: ");
       String inputStr = scan.nextLine();
@@ -23,6 +24,7 @@ public class Main {
       System.out.println("You entered: " + inputStr);
       // Use values in an expression
       double sum = inputInt + inputDouble;
+      */
 
       // *** STRING CLASS ***
       // Original way of structing a String object
@@ -43,6 +45,20 @@ public class Main {
       System.out.println(12 + 3 + 4); // NOT concatenation, just addition
       System.out.println("12" + (3 + 4)); // does parenthesis first
       System.out.println(("12") + 3 + 4);
+
+      // *** STRING METHODS
+      // .length() returns number of characters
+      int messageLength = message.length();
+      System.out.println("Length: " + messageLength);
+
+      //.length()-1 represents final index
+      System.out.println("Final Index: " + (message.length()- 1));
+
+      // Use index to access characters(s)
+      // .substring(int, int) return a string from first index to second 
+      // not including the character at the second index
+      String firstWord = message.substring(0,4);
+      System.out.println(firstWord); 
      
    }
 }
