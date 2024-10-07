@@ -90,5 +90,37 @@ public class Main {
       // returns a negeative integer if this string < is other string 
       System.out.println(a.compareTo(z));
       System.out.println(z.compareTo(a));
+
+      // *** MATH CLASS METHODS ***
+      // Do NOT need to construct a math OBJECT to use 
+      int absVal = Math.abs(-273);
+      System.out.println(absVal);
+
+      double absValDoub = Math.abs(-2.5);
+      System.out.println(absValDoub);
+
+      // Math.pow(double, double) return the first double raised to the second double provided
+      double cubed = Math.pow(38, 3);
+      System.out.println(cubed); // result is a double
+
+      // Math.sqrt(double) returns the square rot of the input 
+      double squareRoot = Math.sqrt(49);
+      System.out.println(squareRoot);
+
+      // Math.random() returns a random double
+      System.out.println("Random number: " + Math.random()); // Range is [0.0, 1.0] 
+
+      // Modify the range of output from Math.random
+      // Multiply output to increase end point of range
+      double rand = Math.random() * 100;
+      System.out.println(rand); // Range is [0.0, 100.0]
+
+      // Add to output to increase starting point
+      double rand2 = Math.random() * 100 + 1;
+      System.out.println(rand2); // Range is [1.0, 101.0]
+
+      // Cast to an int if you wanr a random whole number
+      int randInt = (int) (Math.random() * 10 + 1);
+      System.out.println(randInt);
   }
 }
